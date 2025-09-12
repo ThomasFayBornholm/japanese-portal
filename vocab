@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>	
+	<meta charset="UTF-8">
+	<title>Japanese</title>
+	<link rel="stylesheet" href="fmt.css">
+	<script src="jquery-3.6.0.js"></script>
+	<script src="jquery-ui-1.14.1/jquery-ui.js"></script>
+	<script src="main.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<link rel="stylesheet" href="jquery-ui-1.14.1/jquery-ui.css">
+	<link rel="icon" type="image/x-icon" href="img/Flag_of_Japan.svg">
+	<script>
+	$( function() {
+		$( document ).tooltip();
+	} );
+	</script>
+	<style>
+	label {
+		display: inline-block;
+		width: 5em;
+	}
+	</style>	
+</head>
+<body onload="startup()">
+	<input id="iInput" type="text" onkeyup="new_input(event)">
+	<p id="iFeedback"></p>
+</body>
