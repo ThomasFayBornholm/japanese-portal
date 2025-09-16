@@ -1,0 +1,21 @@
+.match {
+    color: red;
+}
+
+span {
+    color: red;
+}
+
+i {
+    color: red;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.romanji {
+    color: black;
+}

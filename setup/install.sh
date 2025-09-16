@@ -2,10 +2,12 @@ install_path="/var/www/html/japanese"
 src_path="/home/glatho01/src/japanese-portal"
 cp $src_path/vocab $install_path/
 cp $src_path/main.js $install_path/
+cp $src_path/fmt.css $install_path/
 cp -r $src_path/backend $install_path/
 mkdir -p $install_path/lists
 mkdir -p $install_path/img
 cp $src_path/lists/all-def $install_path/lists
+cp $src_path/lists/hiragana $install_path/lists
 cp $src_path/img/* $install_path/img/
 
 if [ ! -f $install_path/jquery-3.6.0.js ]; then

@@ -9,6 +9,7 @@ $out["matches"] = [];
 foreach($dict as $key => $value) {
     if (preg_match($pattern,$key)) {
         array_push($out["matches"],[$key,$value[0]]);
+        if (count($out["matches"]) === $MAX_WORDS) break;
     }
 }
 

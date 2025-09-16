@@ -23,6 +23,14 @@
 	</style>	
 </head>
 <body onload="startup()">
+	<div>
 	<input id="iInput" type="text" onkeyup="new_input(event)">
-	<p id="iFeedback"></p>
+	<span id="iFeedback"></span>
+	</div>
+	<p id="iContent"></p>
+	<p id="iSuggestions"></p>
+	<p id="iConj"></p>
+	<div class="footer">
+		<span id="iHiragana">sfdasdf </span>
+	</div>
 </body>
