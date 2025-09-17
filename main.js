@@ -21,7 +21,7 @@ function startup() {
     $('#iInput').focus();
     word_count();
    random_sentence();
-   hiragana_chart();
+   //hiragana_chart();
 }
 
 function random_integer(min, max) {
@@ -150,5 +150,9 @@ async function hiragana_chart() {
     out_html += "<tr><td><span class='romanji'>ka  : </span>" + json["ka"] + "</td><td><span class='romanji'>; ki :</span>" + json["ki"] +  "<td><span class='romanji'>ku :</span> " + json["ku"]  + "<span class='romanji'>; ke : </span>" + json["ke"] + "<span class='romanji'> ; ko : </span>" + json["ko"] + "<td></tr>";
     out_html += "<tr><td><span class='romanji'>sa  : </span>" + json["sa"] + "</td><td><span class='romanji'>;  shi :</span>" + json["shi"] +  "<td><span class='romanji'>su :</span> " + json["su"]  + "<span class='romanji'>; se : </span>" + json["se"] + "<span class='romanji'> ; so : </span>" + json["so"] + "<td></tr>";
     out_html += "<tr><td><span class='romanji'>ta  : </span>" + json["ta"] + "</td><td><span class='romanji'>;  chi :</span>" + json["chi"] +  "<td><span class='romanji'>tsu :</span> " + json["tsu"]  + "<span class='romanji'>; te : </span>" + json["te"] + "<span class='romanji'> ; to : </span>" + json["to"] + "<td></tr>";
+    out_html += "<tr><td><span class='romanji'>na  : </span>" + json["na"] + "</td><td><span class='romanji'>;  ni:</span>" + json["ni"] +  "<td><span class='romanji'>nu :</span> " + json["nu"]  + "<span class='romanji'>; ne : </span>" + json["ne"] + "<span class='romanji'> ; no : </span>" + json["no"] + "<td></tr>";
+    out_html += "<tr><td><span class='romanji'>ha  : </span>" + json["ha"] + "</td><td><span class='romanji'>;  hi:</span>" + json["hi"] +  "<td><span class='romanji'>fu :</span> " + json["fu"]  + "<span class='romanji'>; he : </span>" + json["he"] + "<span class='romanji'> ; ho : </span>" + json["ho"] + "<td></tr>";
+    out_html += "<tr><td><span class='romanji'>ma  : </span>" + json["ma"] + "</td><td><span class='romanji'>;  mi:</span>" + json["mi"] +  "<td><span class='romanji'>mu :</span> " + json["mu"]  + "<span class='romanji'>; me : </span>" + json["me"] + "<span class='romanji'> ; mo : </span>" + json["mo"] + "<td></tr>";
+    out_html += "<tr><td><span class='romanji'>ya  : </span>" + json["ya"] + "</td><td><span class='romanji'>;  OBS<td><span class='romanji'>yu :</span> " + json["yu"]  + "<span class='romanji'>; OBS ; yo : </span>" + json["yo"] + "<td></tr>";
     $('#iHiragana').html(out_html);
 }
